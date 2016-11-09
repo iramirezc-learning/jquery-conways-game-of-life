@@ -1,6 +1,8 @@
 # Conway's Game of Life
 
-This is a practical project using jQuery and OOP JS.
+A practical project using jQuery and OOP JS.
+
+*Use Chrome for better performance.*
 
 ## Screenshot
 

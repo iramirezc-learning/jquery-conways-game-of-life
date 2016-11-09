@@ -90,7 +90,7 @@
         }
 
         function evolve() {
-            if (running === null) {
+            if (game instanceof Board && running === null) {
                 game.evolve();
                 if (game.isBalanced()) {
                     gameBalanced();
@@ -100,7 +100,7 @@
         }
 
         function play() {
-            if (running === null) {
+            if (game instanceof Board && running === null) {
                 enableButtons(buttonStop);
                 disableButtons(buttonNew, buttonEvolve, buttonPlay);
 
@@ -115,7 +115,7 @@
         }
 
         function stop() {
-            if (running !== null) {
+            if (game instanceof Board && running !== null) {
                 enableButtons(buttonNew, buttonEvolve, buttonPlay);
                 disableButtons(buttonStop);
                 stopAutoplay();
@@ -152,8 +152,11 @@
 
         speedControl.change(function() {
             GAME_SPEED = this.value;
+            let wasRunning = running;
             stop();
-            play();
+            if (wasRunning) {
+                play();
+            }
         });
 
         multiControl.change(function() {

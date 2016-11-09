@@ -65,7 +65,19 @@ h1 {
 }
 
 .controls label {
+    width: 80%;
     margin: 0 auto;
+    text-align: right;
+    padding-right: 15%;
+}
+
+.controls label input[type="number"] {
+    width: 50%;
+}
+
+.controls label.multicolor {
+    text-align: center;
+    padding-right: 0;
 }
 
 .cell {
