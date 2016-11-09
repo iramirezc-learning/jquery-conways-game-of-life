@@ -93,7 +93,7 @@
             if (game instanceof Board && running === null) {
                 game.evolve();
                 if (game.isBalanced()) {
-                    gameBalanced();
+                    gameIsBalanced();
                 }
                 updateGenerations();
             }
