@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 60px;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.game {
+    width: 75%;
+    height: 500px;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #333333;
+    position: relative;
+}
+
+.balanced {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+}
+
+.generations {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+}
+
+.board {
+    width: 400px;
+    height: 400px;
+    outline: 1px solid #333333;
+}
+
+.controls {
+    width: 25%;
+    height: 500px;
+    border: 3px solid #333333;
+    border-left: none;
+    float: right;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.controls button {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.controls label {
+    margin: 0 auto;
+}
+
+.cell {
+    width: 4px;
+    height: 4px;
+    float: left;
+}

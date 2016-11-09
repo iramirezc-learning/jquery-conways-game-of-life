@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Isaac Ramírez">
+    <meta name="author-email" content="iramirezc@live.com.mx">
+    <title>Conway's Game of Life</title>
+    <link rel="stylesheet" href="css/vendor/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+    <h1>Conway's Game of Life</h1>
+    <div class="container">
+        <div class="game">
+            <div class="generations">Generations: <span>0</span></div>
+            <div class="balanced"><span></span></div>
+            <div class="board"></div>
+        </div>
+        <div class="controls">
+            <label for="size">Size:
+                <input type="number" name="size" value="50" min="10" max="100" step="10">
+            </label>
+            <label for="speed">Speed:
+                <input type="number" name="speed" value="50" min="10" max="200" step="10">
+            </label>
+            <label for="multicolor">Multicolor:
+                <input type="checkbox" name="multicolor">
+            </label>
+            <button class="button" type="button" name="new">New</button>
+            <button class="warning button" type="button" name="evolve" disabled>Evolve</button>
+            <button class="success button" type="button" name="play" disabled>Play</button>
+            <button class="alert button" type="button" name="stop" disabled>Stop</button>
+        </div>
+    </div>
+
+    <script src="js/vendor/jquery.js" charset="utf-8"></script>
+    <script src="js/cell.js" charset="utf-8"></script>
+    <script src="js/board.js" charset="utf-8"></script>
+    <script src="js/app.js" charset="utf-8"></script>
+</body>
+
+</html>
